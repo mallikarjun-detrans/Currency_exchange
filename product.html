@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DecoHome" />
+    <meta name="keywords" content="decoarations things" />
+    <meta name="author" content="Mallik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodct-page</title>
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
+
+</head>
+
+<body>
+    <!-- Header-section -->
+    <div class="header">
+        <div class="container-fluid bg-dark px-5">
+            <div class="row">
+                <div class="col-md-1 d-flex justify-content-center justify-content-center-md-start">
+                    <a class="btn btn-link text-light " href="" target="_blank"><i class=""></i></a>
+                    <a class="btn btn-link text-light " href="https://www.twitter.com" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light " href="https://www.linkedin.com" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light " href="https://www.facebook.com" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-10 d-flex justify-content-end mx-2 align-items-center top-nav">
+                    <a class="text-decoration-none text-white" href=""> <i class="fa-solid fa-phone me-2"></i>
+                        +91 1234567898</a>
+                    <a class="text-decoration-none text-white ml-2 g-3" href=""><i
+                            class="fa-solid fa-envelope me-2"></i>mk@detrains.io</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- topbar -->
+
+    <!-- Navigation-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbarcolor">
+        <div class="container-fluid logo">
+            <a href="https://placeholder.com">
+                <img src="https://via.placeholder.com/60" id="image-logo" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Other page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar ends -->
+    <div class="breadcrumbformat">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html"> Home </a></li>
+            <li class="breadcrumb-item"> <a href="product.html"> Product </a></li>
+            <li class="breadcrumb-item"> <a href="product.html"> Product page </a></li>
+        </ol>
+    </div>
+     <!-- search bar -->
+     <div class="search-container">
+
+        <input type="text" autocomplete="off" id="search" onclick="overlayShow()" onmouseout="overlayHidden()"
+            placeholder="search" onkeyup="inputFn()">
+        <a href="#"><i class="fa fa-search searchicon"></i> </a>
+        <div class="search-result hidden">
+
+        </div>
+    </div>
+
+    <div class="container-fluid colorind">
+        <div class="col-lg-12  p-3 main-section ">
+            <div class="row m-0">
+                <div class="col-lg-6 left-side-product-box color-body pb-3 border-style  bg-white">
+                    <!-- <div class="container-fluid"> -->
+                        <h4 class="text-center  text-decor">Product-Images</h4>
+                    <div class="container-fluid boximage  imgzoom">
+                        
+                        <figure id="magnifying_area">
+                            <img class="img-fluid mainImage" id="mainImg"
+                                src="https://via.placeholder.com/150/497174?Text=WebsiteBuilders.com" alt="">
+                        </figure>
+                        <div class="thumb_img_list">
+                            <ul>
+                                <li><img src="https://via.placeholder.com/150/463789?Text=Down.com" alt=""
+                                        class="product-images" id="thumb1"></li>
+                                <li><img src="https://via.placeholder.com/150/d39d8?Text=WebsiteBuilders.com"
+                                        alt="" class="product-images" id="thumb2"></li>
+                                <li><img src="https://via.placeholder.com/150/808080 ?Text=Digital.com" alt=""
+                                        class="product-images" id="thumb3"></li>
+                                <li><img src="https://via.placeholder.com/150/d39d8?Text=Down.com" alt=""
+                                        class="product-images" id="thumb4"></li>
+                                <li><img src="https://via.placeholder.com/150/D6E4E5?Text=WebsiteBuilders.com"
+                                        alt="" class="product-images" id="thumb5"></li>
+                                <li><img src="https://via.placeholder.com/150/d39d8 ?Text=Digital.com" alt=""
+                                        class="product-images" id="thumb6"></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="member-info">
+                            <h4>About Product</h4>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima dignissimos voluptate
+                            corporis inventore architecto, ab harum exercitationem ipsam sequi voluptas pariatur
+                            similique odio aperiam accusamus quae omnis deleniti culpa fuga est facere perferendis
+                            hic a nostrum iure laudantium, ratione distinctio id, consectetur laborum deserunt quaerat,
+                            laboriosam quo mollitia? Saepe, nemo? Vitae eveniet iusto rerum reprehenderit, totam illo
+                            deleniti, placeat dignissimos corrupti aut voluptas sint, similique modi eius. Quia sunt
+                            libero beatae iste atque dolore et! Reiciendis dolorum labore sint corporis deleniti facere
+                            nostrum eligendi dolores ipsum, quod, rem perferendis modi aliquid, delectus nam excepturi
+                            aspernatur obcaecati cumque tempora! Adipisci reprehenderit hic autem, ut nam aut maiores
+                            odio eligendi soluta ipsum, consectetur natus accusantium.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="right-side-pro-detail border border-style p-3 m-0 bg-white">
+                        <div class="row">
+                            <div class="col-lg-12 pt-2">
+                                <h4>Product Detail:</h4>
+                                <form action="" id="currencypos">
+                                    <span class="styleword">Currency : </span>
+                                    <select class="stylingfor" name="buy" id="currency" onchange="calculateAmount()">
+                                        <option value="inr" selected>INR</option>
+                                        <option value="usd">USD</option>
+                                        <option value="eur">EUR</option>
+                                    </select>
+                                </form>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris.</p>
+                                <br><br>
+                                <div class="col-lg-12" id="banner" method="post" action="">
+                                    <h5>Buy Online :</h5>
+                                    <form action="">
+                                        <span>Material : </span>
+                                        <select class="stylingfor" name="size" id="material" onchange="calculateAmount()">
+                                            <option value="0" disabled selected>--Choose Material--</option>
+                                            <option value="1200">Casual Finish</option>
+                                            <option value="1400">Matt Finish</option>
+                                            <option value="1800">Royal Finish</option>
+                                        </select>
+                                    </form>
+                                    <br>
+                                    <form action="">
+                                        <span>Quantity : </span>
+                                        <input class="stylingfor" type="number" id="amounts" name="points" step="1" min="1"
+                                            max="999999999999999999999999" onchange="calculateAmount()">
+                                    </form>
+                                    <br>
+                                    <form action="">
+                                        <span>Total Amount: </span>
+                                        <input class="stylingfor" name="tot_amount" id="tot_amount" type="text" readonly>
+                                    </form>
+                                </div>
+
+                                <hr class="m-0 pt-2 mt-2">
+                            </div>
+                            <div class="col-lg-12 mt-3">
+                                <div class="container py-5 custom_tab_style1_outer">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <h3 class="main_title">Product Service</h3>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <ul class="nav nav-tabs custom_tab_style2" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#Profile2" type="button" role="tab"
+                                                        aria-controls="home" aria-selected="true">Descriptions</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="home-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#Profile2" type="button" role="tab"
+                                                        aria-controls="home"
+                                                        aria-selected="true">Specifications</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#Gallery2" type="button" role="tab"
+                                                        aria-controls="profile" aria-selected="false">Comments</button>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="Profile2" role="tabpanel"
+                                                    aria-labelledby="home-tab">
+                                                    <div class="member_card_style">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+
+                                                                    <div class="col-md-12 d-flex align-items-center">
+                                                                        <div class="member-info">
+                                                                            <h4>Lorem ipsum dolor</h4>
+
+                                                                            <p>
+                                                                                Lorem ipsum dolor sit amet
+                                                                                consectetur
+                                                                                adipisicing elit. Odio reiciendis
+                                                                                ipsa
+                                                                                nulla magnam eligendi odit
+                                                                                laudantium in
+                                                                                voluptatum reprehenderit qui
+                                                                                adipisci
+                                                                                aliquam, doloribus quisquam facere
+                                                                                dolore soluta, dolorem,
+                                                                                illum quis.
+                                                                            </p>
+                                                                            <div class="social">
+                                                                                <a href=""><i
+                                                                                        class="fab fa-facebook-f"></i></a>
+                                                                                <a href=""><i
+                                                                                        class="fab fa-twitter"></i></a>
+                                                                                <a href=""><i
+                                                                                        class="fab fa-facebook-f"></i></a>
+                                                                                <a href=""> <i
+                                                                                        class="fab fa-twitter"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="Gallery2" role="tabpanel"
+                                                    aria-labelledby="profile-tab">
+                                                    <div class="content">
+                                                        <div class="review-content">
+                                                            <div class="product-review1 d-flex member_card_style">
+                                                                <div class="col-lg-3 review-img">
+                                                                    <img class="my-2"
+                                                                        src="https://via.placeholder.com/50"
+                                                                        alt="Favourite-Music" style="border-radius:50%">
+                                                                </div>
+                                                                <div class="col-lg-9 review-content review-1">
+                                                                    <h5>Monster</h5>
+                                                                    <p>wow superrr..</p>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review2 d-flex member_card_style">
+                                                                <div class="col-lg-3 review-img">
+                                                                    <img class="my-2"
+                                                                        src="https://via.placeholder.com/50"
+                                                                        alt="main logo" style="border-radius:50%">
+                                                                </div>
+                                                                <div class="col-lg-9 review-content review-1">
+                                                                    <h5>Iron Man</h5>
+                                                                    <p>wow. amazing!</p>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review2 d-flex member_card_style">
+                                                                <div class="col-lg-3 review-img">
+                                                                    <img class="my-2"
+                                                                        src="https://via.placeholder.com/50"
+                                                                        alt="main logo" style="border-radius:50%">
+                                                                </div>
+                                                                <div class="col-lg-9 review-content review-1">
+                                                                    <h5>SuperMan</h5>
+                                                                    <p>really nice one..</p>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review2 d-flex member_card_style">
+                                                                <div class=" col-lg-3 review-img">
+                                                                    <img class="my-2"
+                                                                        src="https://via.placeholder.com/50"
+                                                                        alt="main logo" style="border-radius:50%">
+                                                                </div>
+                                                                <div class=" col-lg-9 review-content review-1">
+                                                                    <h5>Captain America</h5>
+                                                                    <p>its good..</p>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star checked"></span>
+                                                                    <span class="fa fa-star"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- extr -->
+
+
+    <!-- footer -->
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-2 pb-0">
+
+            <section class="mb-4">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Policy & Privacy</a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Links</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Register for free</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Contact</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Awards</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">Help</i></a>
+            </section>
+
+        </div>
+        <!-- Copyright -->
+        <div class="text-center">
+            © 2022 Copyright:
+            <a class="text-white" href="#">abc@detrans.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
+
+
+    <script src="js/product.js"></script>
+    <script src="js/product1.js"></script>
+</body>
+
+</html>

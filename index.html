@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DecoHome" />
+    <meta name="keywords" content="decoarations things" />
+    <meta name="author" content="Mallik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Page</title>
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/searchbar.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header-section -->
+    <!-- topbar -->
+    <div class="header">
+        <div class="container-fluid bg-dark px-5">
+            <div class="row">
+                <div class="col-md-1 d-flex justify-content-center justify-content-center-md-start">
+                    <a class="btn btn-link text-light " href="" target="_blank"><i class=""></i></a>
+                    <a class="btn btn-link text-light " href="https://www.twitter.com" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light " href="https://www.linkedin.com" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light " href="https://www.facebook.com" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-10 d-flex justify-content-end mx-2 align-items-center top-nav">
+                    <a class="text-decoration-none text-white" href=""> <i class="fa-solid fa-phone me-2"></i>
+                        +91 1234567898</a>
+                    <a class="text-decoration-none text-white ml-2 g-3" href=""><i
+                            class="fa-solid fa-envelope me-2"></i>mk@detrains.io</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbarcolor">
+        <div class="container-fluid logo">
+            <a href="https://placeholder.com">
+                <img src="https://via.placeholder.com/60" id="image-logo" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Other pages</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar ends -->
+    <div class="breadcrumbformat">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html"> Home </a></li>
+
+            <li class="breadcrumb-item"> <a href="index.html"> Home-Page </a></li>
+        </ol>
+    </div>
+
+    <!-- search bar -->
+    <div class="search-container">
+
+        <input type="text" autocomplete="off" id="search" onclick="overlayShow()" onmouseout="overlayHidden()"
+            placeholder="search" onkeyup="inputFn()">
+        <a href="#"><i class="fa fa-search searchicon"></i> </a>
+        <div class="search-result hidden about-things">
+
+        </div>
+    </div>
+
+    <div class="container-fluid text-align mt-5">
+        <h3 class="text-center mb-3">Our Company Name</h3>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="https://via.placeholder.com/600x300/b3c6ff?text=Image" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+                <h5>About-Us</h5>
+                <p class="productp"> Lor em ipsum dolor sit amet consectetur adipisicing elit. Rem, deserunt eius hic
+                    sapiente dicta reprehenderit consequuntur amet in incidunt aut perspiciatis possimus laudantium
+                    unde? Perspiciatis quibusdam dicta autem tempore modi ab delectus facere nam, quis adipisci quo,
+                    repudiandae nesciunt necessitatibus voluptatem quaerat at suscipit velit, soluta vero. Facere
+                    dolorem nam maiores velit! Vitae libero quae illo odio nostrum possimus ea, doloribus non doloremque
+                    accusamus deleniti, quia, tempora quo minus placeat consectetur unde qui praesentium earum voluptas.
+                    Iusto, obcaecati tempore asperiores, ullam iure architecto dolor omnis possimus ad esse, numquam
+                    quia! Id tenetur consequatur laboriosam omnis et culpa veritatis totam minima. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <h3 class="text-center"> Our Company Images</h3>
+        <div class="container-fluid imageside mt-3">
+            <img src="https://via.placeholder.com/300x250/b3c6ff?text=Image"  alt="...">
+            <img src="https://via.placeholder.com/300x250/b3c6ff?text=Image"  alt="...">
+            <img src="https://via.placeholder.com/300x250/b3c6ff?text=Image"  alt="...">
+        </div>
+        
+      </div>
+
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <div class="container-fluid p-2 pb-0">
+
+            <section class="mb-4">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">Policy & Privacy</a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="product.html" role="button">Links</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">Register for
+                    free</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">Contact</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">Awards</i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">Help</i></a>
+            </section>
+
+        </div>
+        <!-- Copyright -->
+        <div class="text-center">
+            © 2022 Copyright:
+            <a class="text-white" href="#">abc@detrans.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
+
+
+
+</body>
+<script src="js/searchbar.js"></script>
+
+</html>
